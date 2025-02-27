@@ -63,7 +63,7 @@ describe.only('Topup-Withdraw', () => {
      .should('be.visible')
      .click();
 
-     /cy.wait(5000);
+     //cy.wait(5000);
     // cy.xpath("//span[@class='k-icon k-i-x']").click();
 
     });
