@@ -59,13 +59,12 @@ describe.only('Topup-Withdraw', () => {
     cy.xpath("(//a[@title='Performance'])[1]").click();
      cy.wait(8000);
 
-     cy.xpath("(//button[normalize-space()='Withdrawal'])[1]")
+     cy.xpath("//div[contains(@class, 'stock_header_right')]//a[contains(@class, 'withdraw_btn')]")
      .should('be.visible')
      .click();
 
-     cy.wait(5000);
-     cy.xpath("//span[@class='k-icon k-i-x']").click();
-     //Withdraw
+     /cy.wait(5000);
+    // cy.xpath("//span[@class='k-icon k-i-x']").click();
 
     });
 });
