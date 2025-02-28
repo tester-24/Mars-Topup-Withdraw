@@ -55,8 +55,10 @@ describe.only('Topup-Withdraw', () => {
      cy.xpath('//a[normalize-space()="Dashboard"]')
     .should('be.visible')
     .click();
-    cy.wait(8000);
-    cy.xpath("(//a[@title='Performance'])[1]").click();
+     cy.wait(8000);
+     cy.xpath("//h4[text()=' Small Basket']/ancestor::div[contains(@class,'main-dash-cont-block')]//a[@title='Performance']").click();
+
+    //cy.xpath("(//a[@title='Performance'])[1]").click();
      cy.wait(8000);
 
      cy.xpath("//div[contains(@class, 'stock_header_right')]//a[contains(@class, 'withdraw_btn')]")
