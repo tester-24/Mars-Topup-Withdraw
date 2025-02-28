@@ -56,8 +56,8 @@ describe.only('Topup-Withdraw', () => {
     .should('be.visible')
     .click();
      cy.wait(8000);
-     cy.xpath("//h4[text()=' Small Basket']/ancestor::div[contains(@class,'main-dash-cont-block')]//a[@title='Performance']").click();
-
+     //cy.xpath("//h4[text()=' Small Basket']/ancestor::div[contains(@class,'main-dash-cont-block')]//a[@title='Performance']").click();
+     cy.xpath("//h4[text()=' idea']/ancestor::div[contains(@class,'main-dash-cont-block')]//a[@title='Performance']").click();
     //cy.xpath("(//a[@title='Performance'])[1]").click();
      cy.wait(8000);
 
