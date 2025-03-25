@@ -12,9 +12,9 @@ describe.only('Topup-Withdraw', () => {
     cy.viewport(1280, 720);
     cy.visit('https://mars.jainam.in/home');
     cy.wait(8000);
-    cy.xpath("//button[@aria-label='Close']").click();
+   // cy.xpath("//button[@aria-label='Close']").click();
 
-    cy.wait(10000);
+   // cy.wait(10000);
     cy.xpath('/html/body/app-root/app-layout/div/app-maincontent/app-home/section/div/div[1]/div/div/div[2]/div[3]/a/span').click()
 
     cy.wait(8000);
@@ -31,8 +31,8 @@ describe.only('Topup-Withdraw', () => {
     cy.xpath("//input[@id='pin4']").type("4");
     cy.wait(10000);
 
-    cy.xpath("//button[@aria-label='Close']").click();
-    cy.wait(10000);
+  //  cy.xpath("//button[@aria-label='Close']").click();
+  //  cy.wait(10000);
 
     cy.wait(5000);
     cy.xpath('//a[normalize-space()="Dashboard"]')
